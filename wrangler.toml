@@ -1,0 +1,16 @@
+name = "yaus"
+main = "src/index.ts"
+compatibility_date = "2025-01-25"
+
+workers_dev = false
+routes = [
+  { pattern = "yaus.kahkin.dev", custom_domain = true }
+]
+
+[vars]
+HOST = "https://yaus.kahkin.dev"
+
+[[d1_databases]]
+binding = "YAUS_DB"
+database_name = "yaus-db"
+database_id = "b0203266-6223-4dd2-ae67-0049169015bb"

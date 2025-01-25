@@ -1,0 +1,16 @@
+{
+  "name": "yaus",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "db:create": "wrangler d1 create yaus-db",
+    "db:init": "wrangler d1 execute yaus-db --remote --file=./sql/schema.sql"
+  },
+  "dependencies": {
+    "hono": "^4.6.18"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "wrangler": "^3.101.0"
+  }
+}
