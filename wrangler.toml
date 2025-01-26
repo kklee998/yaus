@@ -14,3 +14,7 @@ HOST = "https://yaus.kahkin.dev"
 binding = "YAUS_DB"
 database_name = "yaus-db"
 database_id = "b0203266-6223-4dd2-ae67-0049169015bb"
+
+[observability]
+enabled = true
+head_sampling_rate = 1 # optional. default = 1.
